@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="ninecol">
+      <h1>Wishful Thinking: <em><%= @topic.title %></em></h1>
+    </div>
+    <div class="threecol last">
+      <%= link_to 'Neue Idee', new_topic_idea_path(@topic) %>
+    </div>
+  </div>
+</div> <!-- class="container" -->
+
+<div class="container">
+  <%# @ideas.each do |ideas| %>
+  <div class="row">
+    <div class="onecol">3</div>
+    <div class="eightcol"><%# =h idea.title %>
+    </div>
+    <div class="threecol last">&nbsp;</div>
+  </div>
+  <%# end %>
+</div>
+

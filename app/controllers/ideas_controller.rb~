@@ -1,0 +1,7 @@
+class IdeasController < ApplicationController
+  def new
+    @topic = Topic.find(params[:topic_id])
+    @idea = Idea.new
+  end
+
+end

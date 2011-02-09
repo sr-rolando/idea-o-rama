@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="ninecol">
+      <h1>Wishful Thinking</h1>
+    </div>
+    <div class="threecol last">
+      &nbsp;
+    </div>
+  </div>
+</div> <%# "container" %>
+
+<div class="form">
+  <div class="form_content">
+    <% form_for @topic do |form| %>
+    <fieldset>
+      <legend>Neues Thema</legend>
+      <div>
+	<%= form.label :title, "Thema: " %>
+	<%= form.text_field :title %>
+      </div>
+      <%= submit_tag "Thema anlegen", :class => "submit" %>
+      </fieldset>
+    <% end %>
+  </div>
+</div>
