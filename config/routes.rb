@@ -1,4 +1,4 @@
-JqWorkshop::Application.routes.draw do
+IdeaORama::Application.routes.draw do
   resources :topics do
     resources :ideas
   end
