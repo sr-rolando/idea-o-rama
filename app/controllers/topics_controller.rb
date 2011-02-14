@@ -31,6 +31,6 @@ class TopicsController < ApplicationController
   end
 
   def update
-    Log.info ("blurb")
+    Log.info("blurb")
   end
 end
