@@ -3,7 +3,7 @@ class AddIdeaTopicReference < ActiveRecord::Migration
     change_table :ideas do |t|
       t.integer "topic_id"
       # uses the 'foreigner' gem:
-      t.foreign_key :topics, :dependent => :delete
+      #t.foreign_key :topics, :dependent => :delete
     end
   end
 
