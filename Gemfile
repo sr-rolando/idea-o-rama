@@ -1,10 +1,7 @@
 # -*- mode: yaml -*-
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'rails', '3.0.4'
 
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'mysql'
@@ -16,7 +13,7 @@ gem 'jquery-rails', '>= 0.2.6'
 gem 'foreigner'
 
 # https://github.com/plataformatec/devise
-gem 'devise'
+gem 'devise', '1.1.6'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
