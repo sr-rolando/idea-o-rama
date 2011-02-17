@@ -1,4 +1,6 @@
 class IdeasController < ApplicationController
+  before_filter :authenticate_user!
+
   def new
     @topic = Topic.find(params[:topic_id])
     @idea = Idea.new
