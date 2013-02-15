@@ -22,6 +22,12 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   config.authentication_keys = [ :username ]
 
+  # Configure which authentication keys should be case-insensitive.
+  # These keys will be downcased upon creating or modifying a user and when used
+  # to authenticate or find a user. Default is :email.
+  # config.case_insensitive_keys = [ :email ]
+  config.case_insensitive_keys = [ :email ]
+
   # Tell if authentication through request.params is enabled. True by default.
   # config.params_authenticatable = true
 
@@ -55,7 +61,12 @@ Devise.setup do |config|
   # You can use this to let your user access some features of your application 
   # without confirming the account, but blocking it after a certain period 
   # (ie 2 days). 
+  # When allow_unconfirmed_access_for is zero, the user won't be able to sign in without confirming.
+  # You can use this to let your user access some features of your application
+  # without confirming the account, but blocking it after a certain period
+  # (ie 2 days).
   # config.confirm_within = 2.days
+  # config.allow_unconfirmed_access_for = 2.days  
 
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
